@@ -1,0 +1,56 @@
+import streamlit as st
+from streamlit_option_menu import option_menu
+import home, account, Your_Invoices,Use,Chat
+
+
+# Session State Tres importante !!
+if 'Valid_user' not in st.session_state:
+    st.session_state['Valid_user'] = False
+    
+if 'handle_name' not in st.session_state:
+    st.session_state['handle_name'] = ''
+  
+st.set_page_config(
+        page_title="Textra",
+        page_icon=":bar_chart:",
+        layout="wide"        
+) 
+
+# Set CSS style to remove padding/margin
+css = """
+    <style>
+        .main > div {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 0rem;
+        }
+        MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+    </style>
+"""
+
+st.markdown(css, unsafe_allow_html=True)
+
+app = option_menu(
+menu_title=None,
+options=['Home','Account','Use','Chat','Your Invoices'],
+icons=['house-fill','person-circle','gear-fill','chat-dots-fill','trophy-fill'],
+orientation= "horizontal",
+styles={
+    "nav-link-selected": {"background-color": "#3A7FFF"}
+} 
+)
+
+#es
+
+if app == "Home":
+  home.app()
+if app == "Account":
+   account.app()
+if app == 'Use':
+   Use.app()  
+if app == 'Chat':
+   Chat.app()        
+if app == 'Your Invoices':
+   Your_Invoices.app()
