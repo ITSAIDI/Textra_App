@@ -16,6 +16,7 @@ st.set_page_config(
         layout="wide"        
 ) 
 
+
 # Set CSS style to remove padding/margin
 css = """
     <style>
@@ -27,6 +28,10 @@ css = """
         MainMenu {visibility: hidden;}
         footer {visibility: hidden;}
         header {visibility: hidden;}
+        body {
+            background-color: #0E0E0E;
+            color: #FAFAFA;
+        }
     </style>
 """
 
