@@ -313,7 +313,7 @@ def Get_Data():
     'databaseURL': "https://test-b363e-default-rtdb.europe-west1.firebasedatabase.app/",
     'appId': "1:491527659789:web:63c58fd431886844129044",
     'measurementId': "G-6RW1Y8B2YJ",
-    "serviceAccount": "/teamspace/studios/this_studio/Textra/Key.json"
+    "serviceAccount": "/teamspace/studios/this_studio/Textra_App/Key.json"
     }
     firebase = pyrebase.initialize_app(config)
     db = firebase.database()
