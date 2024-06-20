@@ -32,6 +32,7 @@ css = """
             background-color: #0E0E0E;
             color: #FAFAFA;
         }
+      
     </style>
 """
 
@@ -65,7 +66,6 @@ video_html = """
         """
 
 #st.markdown(video_html, unsafe_allow_html=True)
-
 
 app = option_menu(
 menu_title=None,

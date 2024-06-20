@@ -10,8 +10,12 @@ from  utilitis import extract_error_message,Get_Data
 def app():    
     db,auth,_ = Get_Data()
     
-    col1, col2 = st.columns([0.6, 0.4],gap="small")  
-    with col1:
+    col1, col2,col3 = st.columns([0.2, 0.6 , 0.2],gap="small")  
+    with col2:
+        st.write("                           ")
+        st.write("                           ")
+
+    with col2:
         with st.container(border=True):
             # Authentication
             choice = st.selectbox('login/Signup', ['Login', 'Sign up'])
@@ -51,6 +55,3 @@ def app():
                     except requests.exceptions.HTTPError as e:
                         st.error(extract_error_message(str(e)))
         
-    with col2:
-        pass
-       #st.image("Account.png", width=8000, use_column_width=True)
