@@ -16,7 +16,7 @@ def app():
         st.write("                           ")
 
     with col2:
-        with st.container(border=True):
+        with st.container():
             # Authentication
             choice = st.selectbox('login/Signup', ['Login', 'Sign up'])
 
