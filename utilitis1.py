@@ -34,7 +34,7 @@ def Run_llama3_Custom(image):
     return Results,execution_time,Raw_text
 
 def interact_with_model(user_input):
-    response = ollama.chat(model='llama_2', messages=[
+    response = ollama.chat(model='llama3', messages=[
         {
             'role': 'user',
             'content': user_input,
