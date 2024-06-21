@@ -3,6 +3,15 @@ from streamlit_option_menu import option_menu
 import home, account, Your_Invoices,Use,Chat
 import subprocess
 
+
+st.set_page_config(
+        page_title="Textra",
+        page_icon=":bar_chart:",
+        layout="wide"        
+)
+
+
+
 # Session State Tres importante !!
 if 'Valid_user' not in st.session_state:
     st.session_state['Valid_user'] = False
@@ -13,16 +22,6 @@ if 'handle_name' not in st.session_state:
 if 'Ollama' not in st.session_state:
     subprocess.run("curl -fsSL https://ollama.com/install.sh | sh", shell=True, check=True)
     st.session_state['Ollama']  = True
-
-if 'Ollama_Serving' not in st.session_state:
-    subprocess.run("ollama serve", shell=True, check=True)
-    st.session_state['Ollama_Serving']  = True
-
-st.set_page_config(
-        page_title="Textra",
-        page_icon=":bar_chart:",
-        layout="wide"        
-) 
 
 
 # Set CSS style to remove padding/margin
