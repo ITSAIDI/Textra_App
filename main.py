@@ -9,6 +9,16 @@ if 'Valid_user' not in st.session_state:
     
 if 'handle_name' not in st.session_state:
     st.session_state['handle_name'] = ''
+
+if 'Ollama_Start' not in st.session_state:
+    # Start Ollama Server
+    # Run the curl command to download and execute the install script
+    subprocess.run("curl -fsSL https://ollama.com/install.sh | sh", shell=True, check=True)
+
+    # Run the ollama serve command
+    subprocess.run("ollama serve", shell=True, check=True)
+    st.session_state['Ollama_Start']  = True
+
   
 st.set_page_config(
         page_title="Textra",
@@ -77,12 +87,6 @@ styles={
 } 
 )
 
-# Start Ollama Server
-# Run the curl command to download and execute the install script
-subprocess.run("curl -fsSL https://ollama.com/install.sh | sh", shell=True, check=True)
-
-# Run the ollama serve command
-subprocess.run("ollama serve", shell=True, check=True)
 
 # Logic
 
