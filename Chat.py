@@ -65,7 +65,7 @@ def app():
                 # Save the Image in the Storage
                 uid = st.session_state['user']['localId']
                 storage.child(uid).child("Invoices").child( uploaded_file.name).put(Get_Bytes(image_initiale),st.session_state['user']['idToken'])
-                #storage.child(uid).child("Invoices").child( "Annoutated_"+uploaded_file.name).put(Get_Bytes(image),st.session_state['user']['idToken'])
+                storage.child(uid).child("Invoices").child( "Annoutated_"+uploaded_file.name).put(Get_Bytes(image_initiale),st.session_state['user']['idToken'])
                               
                 file_path = "data.json"
                 save_json_to_file(New_results, file_path)
