@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import home, account, Your_Invoices,Use,Chat
-
+import subprocess
 
 # Session State Tres importante !!
 if 'Valid_user' not in st.session_state:
@@ -77,7 +77,14 @@ styles={
 } 
 )
 
-#es
+# Start Ollama Server
+# Run the curl command to download and execute the install script
+subprocess.run("curl -fsSL https://ollama.com/install.sh | sh", shell=True, check=True)
+
+# Run the ollama serve command
+subprocess.run("ollama serve", shell=True, check=True)
+
+# Logic
 
 if app == "Home":
   home.app()
