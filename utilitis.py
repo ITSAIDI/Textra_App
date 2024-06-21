@@ -177,7 +177,7 @@ def Draw(image):
     custom_font_size = 25
 
     # Load a font with the custom size
-    font_path = "arial.ttf"  # Specify the path to your font file
+    font_path = "/teamspace/studios/this_studio/Textra_App/arial.ttf"  # Specify the path to your font file
     custom_font = ImageFont.truetype(font_path, custom_font_size)
 
     for result in Finale_results:
