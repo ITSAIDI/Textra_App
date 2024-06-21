@@ -305,16 +305,17 @@ def Get_Files(User_ID, storage):
 #############################################################################
 #############################################################################
 def Get_Data():
+    
     config = {
-    'apiKey': "AIzaSyCRX2jKmzxqUWU9W0gpfg9pwGLPDUygUWE",
-    'authDomain': "test-b363e.firebaseapp.com",
-    'projectId': "test-b363e",
-    'storageBucket': "test-b363e.appspot.com",
-    'messagingSenderId': "491527659789",
-    'databaseURL': "https://test-b363e-default-rtdb.europe-west1.firebasedatabase.app/",
-    'appId': "1:491527659789:web:63c58fd431886844129044",
-    'measurementId': "G-6RW1Y8B2YJ",
-    "serviceAccount": "/teamspace/studios/this_studio/Textra_App/Key.json"
+        'apiKey': "AIzaSyDcfRlDR9_cQlraufLAwoBHApzSpoNb5DU",
+        'authDomain': "textra-92af2.firebaseapp.com",
+        'projectId': "textra-92af2",
+        'storageBucket': "textra-92af2.appspot.com",
+        'messagingSenderId': "332721758689",
+        'databaseURL':  "https://textra-92af2-default-rtdb.europe-west1.firebasedatabase.app/"  ,
+        'appId': "1:332721758689:web:c3ff3ca1b6fe97a9adb2a0",
+        'measurementId': "G-ZQM0KC0MED",
+        "serviceAccount": "/teamspace/studios/this_studio/Textra_App/Key.json"
     }
     firebase = pyrebase.initialize_app(config)
     db = firebase.database()
