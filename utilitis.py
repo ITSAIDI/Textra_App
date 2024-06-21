@@ -121,7 +121,8 @@ def get_Finale_results(offset_mapping,id2label,image,prediction_scores,predictio
 
 def Run_model(image):
     encoding,offset_mapping,_ = Encode(image)
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    #device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cpu')
     # load the fine-tuned model from the hub
     model = LayoutLMv3ForTokenClassification.from_pretrained(model_Hugging_path)
     model.to(device)
