@@ -35,7 +35,6 @@ def app():
             # Chat interface
             st.subheader("Interact with Llama3")
             user_input = st.text_input("Ask for more details or clarification:")
-            #Raw_Text = Run_ocr(image_initiale)
 
             if user_input:
                 response = interact_with_model(user_input+" "+Raw_Text)
