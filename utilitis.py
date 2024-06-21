@@ -307,14 +307,14 @@ def Get_Files(User_ID, storage):
 def Get_Data():
     
     config = {
-        'apiKey': "AIzaSyDcfRlDR9_cQlraufLAwoBHApzSpoNb5DU",
-        'authDomain': "textra-92af2.firebaseapp.com",
-        'projectId': "textra-92af2",
-        'storageBucket': "textra-92af2.appspot.com",
-        'messagingSenderId': "332721758689",
-        'databaseURL':  "https://textra-92af2-default-rtdb.europe-west1.firebasedatabase.app/"  ,
-        'appId': "1:332721758689:web:c3ff3ca1b6fe97a9adb2a0",
-        'measurementId': "G-ZQM0KC0MED",
+        'apiKey': "AIzaSyBZqb--9oZsLh8jL2Np1RmQHjLQbnlCgF0",
+        'authDomain': "textra-c1196.firebaseapp.com",
+        'projectId': "textra-c1196",
+        'storageBucket': "textra-c1196.appspot.com",
+        'messagingSenderId': "39562237753",
+        'databaseURL': 'https://textra-c1196-default-rtdb.europe-west1.firebasedatabase.app/',
+        'appId': "1:39562237753:web:3f5ee63d16f6014f093ae8",
+        'measurementId': "G-10E1G02ZXV",
         "serviceAccount": "/teamspace/studios/this_studio/Textra_App/Key.json"
     }
     firebase = pyrebase.initialize_app(config)

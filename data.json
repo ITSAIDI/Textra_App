@@ -1,8 +1,8 @@
 {
-    "Fournisseur": "ASSOFTWARE",
-    "Date Facture": "05/08/2022",
-    "Numéro de facture": "F2022/0038",
-    "Total HT": "387,50 Dh",
-    "TVA": "77,50 Dh",
-    "Total TTC": "465,00 Dh"
+    "Fournisseur": "Business name",
+    "Date Facture": "mm/dd/yyyy",
+    "Numéro de facture": "Invoice# 00000",
+    "Total HT": "000.00 Dh",
+    "TVA": " Dh",
+    "Total TTC": "000.00 Dh"
 }
