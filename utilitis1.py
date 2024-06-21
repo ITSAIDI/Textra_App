@@ -17,7 +17,7 @@ def Run_ocr(image):
         Text+=results[0][i][1][0]+" "   
     return Text
 
-def Run_llama3(image):
+def Run_llama3_Custom(image):
     start_time = time.time()
 
     Raw_text = Run_ocr(image)
@@ -31,10 +31,10 @@ def Run_llama3(image):
     end_time = time.time()  
     execution_time = end_time - start_time
     Results = To_Dict(response['message']['content'])
-    return Results,execution_time
+    return Results,execution_time,Raw_text
 
 def interact_with_model(user_input):
-    response = ollama.chat(model='llama3', messages=[
+    response = ollama.chat(model='llama_2', messages=[
         {
             'role': 'user',
             'content': user_input,

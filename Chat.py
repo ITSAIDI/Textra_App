@@ -1,6 +1,6 @@
 import streamlit as st
 from utilitis import Update,Get_Data,Get_Bytes,save_json_to_file
-from utilitis1 import Run_llama3,interact_with_model,Run_ocr
+from utilitis1 import Run_llama3_Custom,interact_with_model,Run_ocr
 from PIL import Image
 import time 
 
@@ -22,10 +22,10 @@ def app():
             def process_image(uploaded_file):
                 image = Image.open(uploaded_file)
                 image = image.convert("RGB")
-                return Run_llama3(image)
+                return Run_llama3_Custom(image)
             
             # Process the image and retrieve results
-            Results,execution_time = process_image(uploaded_file)
+            Results,execution_time,Raw_Text = process_image(uploaded_file)
             # Execution Time
             st.write(f"Execution Time: {execution_time:.2f} seconds")
             st.image(image_initiale, caption='Output', use_column_width=True)
@@ -35,7 +35,7 @@ def app():
             # Chat interface
             st.subheader("Interact with Llama3")
             user_input = st.text_input("Ask for more details or clarification:")
-            Raw_Text = Run_ocr(image_initiale)
+            #Raw_Text = Run_ocr(image_initiale)
 
             if user_input:
                 response = interact_with_model(user_input+" "+Raw_Text)
