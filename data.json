@@ -1,8 +1,8 @@
 {
-    "Fournisseur": "Business name",
-    "Date Facture": "mm/dd/yyyy",
-    "Numéro de facture": "Invoice# 00000",
-    "Total HT": "000.00 Dh",
-    "TVA": " Dh",
-    "Total TTC": "000.00 Dh"
+    "Fournisseur": "KiPRiNT",
+    "Date Facture": "13/01/2023",
+    "Numéro de facture": "FV230007",
+    "Total HT": "489.00 $",
+    "TVA": "97.80 $",
+    "Total TTC": "586.80 $"
 }

@@ -23,6 +23,7 @@ if 'Ollama' not in st.session_state:
     subprocess.run("curl -fsSL https://ollama.com/install.sh | sh", shell=True, check=True)
     st.session_state['Ollama']  = True
 
+#subprocess.run("ollama serve", shell=True, check=True)
 
 # Set CSS style to remove padding/margin
 css = """
