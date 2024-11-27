@@ -1,6 +1,4 @@
-# Mon Projet
-
-## Démo Vidéo
+# Demo
 
 <div align="center">
   <video controls width="800">
@@ -8,7 +6,6 @@
     Votre navigateur ne supporte pas la lecture des vidéos.
   </video>
 </div>
-
 
 # Document Information Extraction using OCR and LLMs
 
