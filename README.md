@@ -1,3 +1,15 @@
+# Mon Projet
+
+## Démo Vidéo
+
+<div align="center">
+  <video controls width="800">
+    <source src="Demo.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture des vidéos.
+  </video>
+</div>
+
+
 # Document Information Extraction using OCR and LLMs
 
 Our project aimed to develop a flexible and efficient solution for extracting information from a variety of document formats. By leveraging **Optical Character Recognition (OCR)** and **Large Language Models (LLMs)**, such as **Llama 3**, we explored how advanced contextual capabilities of LLMs could enhance the accuracy and adaptability of information extraction.
