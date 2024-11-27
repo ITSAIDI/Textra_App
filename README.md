@@ -1,11 +1,4 @@
-# Demo
-
-<div align="center">
-  <video controls width="800">
-    <source src="Demo.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas la lecture des vidéos.
-  </video>
-</div>
+https://github.com/user-attachments/assets/43426bf5-b659-47d9-b889-79e475825a61
 
 # Document Information Extraction using OCR and LLMs
 
