@@ -4,6 +4,10 @@ https://github.com/user-attachments/assets/43426bf5-b659-47d9-b889-79e475825a61
 
 Our project aimed to develop a flexible and efficient solution for extracting information from a variety of document formats. By leveraging **Optical Character Recognition (OCR)** and **Large Language Models (LLMs)**, such as **Llama 3**, we explored how advanced contextual capabilities of LLMs could enhance the accuracy and adaptability of information extraction.
 
+## Pipeline
+
+![Pipeline](images/Last.png)
+
 ## Key Features
 
 - **Multi-format Document Support**: Our approach is adaptable to numerous document types (pdf,png,jpg,docs), whether they are scanned images, PDFs, or other formats, without requiring specific pre-training or rule-based configurations for each type.
