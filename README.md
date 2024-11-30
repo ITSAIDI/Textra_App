@@ -1,3 +1,5 @@
+![RAGify in Action](Textra_Logo.png)
+
 https://github.com/user-attachments/assets/43426bf5-b659-47d9-b889-79e475825a61
 
 # Document Information Extraction using OCR and LLMs
