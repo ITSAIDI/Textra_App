@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Textra_Logo.png" alt="Textra in Action" width="600" height="300"/>
+  <img src="Textra_Logo.png" alt="Textra in Action" width="600" height="400"/>
 </div>
 
 https://github.com/user-attachments/assets/43426bf5-b659-47d9-b889-79e475825a61
